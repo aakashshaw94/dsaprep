@@ -36,5 +36,14 @@ public class Main {
 
         //SmallestDifference
         System.out.println("Smallest Difference - "+Arrays.toString(SmallestDifference.smallestDifference(new int[] {-1, 5, 10, 20, 28, 3}, new int[] {26, 134, 135, 15, 17})));
+
+        //MoveElementToEnd
+        System.out.println("Move Element To End - "+Arrays.toString(MoveElementToEnd.moveElementsToEnd(new int[] {2, 1, 2, 2, 2, 3, 4, 2}, 2)));
+
+        //MonoticArray
+        System.out.println("Is Monotic Array - "+MonotonicArray.isMonotonic(new int[] {1, 2, 2, 3}));
+
+        //ArrayOfProducts
+        System.out.println("Array of Products - "+Arrays.toString(ArrayOfProducts.arrayOfProducts(new int[] {5, 1, 4, 2})));
     }
 }
