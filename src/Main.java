@@ -45,5 +45,18 @@ public class Main {
 
         //ArrayOfProducts
         System.out.println("Array of Products - "+Arrays.toString(ArrayOfProducts.arrayOfProducts(new int[] {5, 1, 4, 2})));
+
+        //SpiralTraverse
+        System.out.println("Spiral Traverse - "+Arrays.toString(SpiralTraverse.spiralTraverse(new int[][] {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        })));
+
+        //LongestPeak
+        System.out.println("Longest Peak - "+LongestPeak.longestPeak(new int[] {1,2,3,3,4,0,10,6,5,-1,-3,2,3}));
+
+        //FirstDuplicateValue
+        System.out.println("First Duplicate Value - "+FirstDuplicateValue.firstDuplicateValue(new int[] {2, 1, 5, 2, 3, 3, 4}));
     }
 }
