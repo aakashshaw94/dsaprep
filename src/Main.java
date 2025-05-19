@@ -1,3 +1,7 @@
+import BST.BSTConstruction;
+import BST.FindClosestValueInBST;
+import BST.ValidateBST;
+import FamousAlgorithms.KadanesAlgorithm;
 import arrays.*;
 
 import java.util.Arrays;
@@ -58,5 +62,22 @@ public class Main {
 
         //FirstDuplicateValue
         System.out.println("First Duplicate Value - "+FirstDuplicateValue.firstDuplicateValue(new int[] {2, 1, 5, 2, 3, 3, 4}));
+
+
+        //==================================== BST ========================================
+        BSTConstruction bstConstruction = new BSTConstruction();
+        bstConstruction.buildFromInput(new int[] {10, 5, 15, 2, 5, 13, 22} );
+        bstConstruction.inorder();
+
+        // FindClosestValueInBST
+        System.out.println("\nClosest Value in BST - "+ FindClosestValueInBST.findClosestValueInBST(bstConstruction.root, 12));
+
+        //ValidateBST
+        System.out.println("Is BST Valid - "+ ValidateBST.validateBST(bstConstruction.root));
+
+        //=========================== Famouse Algorithms ===========================
+        //Kadane's Algorithm
+        System.out.println("Kadane's Algorithm - "+ KadanesAlgorithm.kadanesAlgorithm(new int[] {2, 3, 6, -1, 4, 5, -2, 1}) );
+
     }
 }
